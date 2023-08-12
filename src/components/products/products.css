@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+.productstitle {
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-align: center;
+}

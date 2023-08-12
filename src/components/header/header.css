@@ -1,0 +1,29 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .titulo {
+    font-size: 1.2rem;
+    margin-right: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  

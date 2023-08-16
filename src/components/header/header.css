@@ -26,4 +26,71 @@
     text-decoration: none;
     margin-right: 20px;
   }
+
+  /* burger */
+
+  .burger {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
   
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  .close-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+  }
+  
+  .close-icon .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1.5px;
+  }
+  
+  .close-icon .bar:nth-child(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1.5px;
+  }
+
+  /* moviles */
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }

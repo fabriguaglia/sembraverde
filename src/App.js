@@ -1,4 +1,5 @@
 import './App.css';
+import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Home from './components/home/home';
 import Header from './components/header/header';
@@ -15,5 +16,5 @@ function App() {
     </Router>
   );
 }
-
+ReactDOM.render(<App />, document.getElementById('root'));
 export default App;

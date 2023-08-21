@@ -1,0 +1,30 @@
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  

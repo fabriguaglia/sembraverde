@@ -14,7 +14,7 @@ function Header() {
       <div className="logo">
         <a href="/"><img src={imgImport.plantaLogo} alt=""></img></a>
       </div>
-      <div className="titulo">Sembraverde</div>
+      <a href="/" className="titulo">Sembraverde</a>
       <div className={`burger ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
         {menuActive ? (
           <div className="close-icon">

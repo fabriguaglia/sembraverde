@@ -15,6 +15,8 @@
   .titulo {
     font-size: 1.2rem;
     margin-right: auto;
+    text-decoration: none;
+    color: white;
   }
   
   .nav-links {

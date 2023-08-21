@@ -35,15 +35,19 @@ const productos = [
 
 function Products() {
   return (
-    <div className='principalproducts'>
+    <div id="catalogo" className='principalproducts'>
       <h1 className='productstitle'>Conecta con la naturaleza</h1>
       <div className='catalogo'>
         {productos.map((producto) => (
           <div key={producto.id} className='producto'>
             <a href={`/producto/${producto.pagina}`}>
-            <img src={producto.imagen} alt={producto.pagina} />
+              <div className='imagen-container'>
+                <img src={producto.imagen} alt={producto.pagina} />
+              </div>
             </a>
-            <p>{producto.nombre}</p>
+            <a href={`/producto/${producto.pagina}`} className='link'>
+              <p>{producto.nombre}</p>
+            </a>
             <p>Precio: ${producto.precio.toFixed(2)}</p>
             <button>Agregar al carrito</button>
           </div>

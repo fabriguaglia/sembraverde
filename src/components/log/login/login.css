@@ -1,0 +1,108 @@
+.principallogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Amiga Forever', sans-serif;
+    color: aliceblue;
+    background-image: url('./pexels-photo-1048033.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 145px;
+    margin-bottom: 150px;
+    background-position: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 72vh;
+  }
+
+  .iniciarsesion {
+    margin-bottom: 40px;
+  }
+  
+  .form {
+    margin-top: 40px;
+  }
+
+  .inputBox {
+    position: relative;
+    margin-bottom: 1.875rem;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.062rem;
+    border: none;
+    border-bottom: 0.065rem solid #fff;
+    outline: none;
+    background: transparent;
+    font-family: 'Amiga Forever', sans-serif;
+    font-size: 1.4rem;
+  }
+  
+ 
+  .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+    font-size: 0.60rem;
+  }
+  
+  .inputBox input:focus ~ label,
+  .inputBox input:valid ~ label,
+  .inputBox input:not([value=""]) ~ label {
+    top: -1.7rem;
+    left: 0;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  input[type="submit"] {
+    border: none;
+    outline: none;
+    color: darkgreen;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 0.75rem;
+    font-family: 'Amiga Forever', sans-serif;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+  .registerp {
+    font-size: 75%;
+  }
+  .registera {
+    color: aquamarine;
+  }
+
+  .buttoncontainer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+  }

@@ -5,6 +5,8 @@ import Home from './components/home/home';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Products from './components/products/products';
+import Carrito from './components/cart/carrito';
+import Login from './components/log/login/login';
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Carrito />} />
+
       </Routes>
       <Footer />
     </Router>

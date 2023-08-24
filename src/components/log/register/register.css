@@ -1,0 +1,102 @@
+.principalreg {
+    background-image: url("./pexels-photo-1048033.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 54px;
+    padding-bottom: 58px;
+    font-size: 150%;
+}
+
+  .register {
+    margin-bottom: 40px;
+    }
+
+    form {
+        margin-top: 40px;
+      }
+      
+      .inputBox {
+        position: relative;
+        margin-bottom: 1.875rem;
+      }
+      
+      .inputBox input {
+        width: 50%;
+        padding: 0.625rem 0;
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.062rem;
+        border: none;
+        border-bottom: 0.065rem solid #fff;
+        outline: none;
+        background: transparent;
+        font-family: 'Amiga Forever', sans-serif;
+        font-size: 1rem;
+      }
+      
+     
+      .inputBox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.625rem 0;
+        font-size: 1rem;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;
+        font-size: 0.60rem;
+      }
+      
+      .inputBox input:focus ~ label,
+      .inputBox input:valid ~ label,
+      .inputBox input:not([value=""]) ~ label {
+        top: -1.125rem;
+        left: 25%;
+        color: white;
+        font-size: 1rem;
+      }
+      
+      input[type="submit"] {
+        border: none;
+        outline: none;
+        color: darkgreen;
+        background-color: white;
+        padding: 0.625rem 1.25rem;
+        cursor: pointer;
+        border-radius: 0.312rem;
+        font-size: 0.75rem;
+        font-family: 'Amiga Forever', sans-serif;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: darkgreen;
+        color: white;
+      }
+      .termycond {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 80%;
+      }
+      .acepterm {
+        color: aquamarine;
+      }
+      .check {
+        margin-left: 10px;
+      }
+  
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+  }

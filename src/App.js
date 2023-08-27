@@ -9,6 +9,10 @@ import Carrito from './components/cart/carrito';
 import Login from './components/log/login/login';
 import Register from './components/log/register/register';
 import TermYCond from './components/log/term/termycond';
+import Gladiolo from './components/products/pages/gladiolo/gladiolo';
+import Petuñas from './components/products/pages/petuñas/petuñas';
+import Margarita from './components/products/pages/margarita/margarita';
+import Hogar from './components/products/pages/hogar/hogar';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
         <Route path="/cart" element={<Carrito />} />
         <Route path="/register" element={<Register />} />
         <Route path="/terminosycondiciones" element={<TermYCond />} />
+        <Route path="/producto/semillas-de-gladiolo" element={<Gladiolo />} />
+        <Route path="/producto/semillas-de-petuñas" element={<Petuñas />} />
+        <Route path="/producto/semillas-de-margarita" element={<Margarita />} />
+        <Route path="/producto/semillas-de-alegría-del-hogar" element={<Hogar />} />
       </Routes>
       <Footer />
     </Router>

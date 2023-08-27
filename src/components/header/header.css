@@ -58,6 +58,16 @@
     left: 0;
     margin-top: -1.5px;
   }
+
+  .cartbutton {
+    background-color: #333;
+    color: white;
+    padding: 0px 7px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 20px;
+    font-size: initial;
+}
   
   .close-icon .bar:nth-child(2) {
     transform: rotate(-45deg);

@@ -1,39 +1,64 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./products.css";
+import Carrito from '../header/cart';
 
 const productos = [
   {
     id: 1,
     nombre: "Semillas de Petuñas",
-    pagina: "Semillas-de-petuñas",
+    pagina: "semillas-de-petuñas",
     imagen: require("./img/prodimg/petuñas.jpeg"),
     precio: 9.99,
+    cantidad: 1,
   },
   {
     id: 2,
     nombre: "Semillas de Margarita",
-    pagina: "Semillas-de-margarita",
+    pagina: "semillas-de-margarita",
     imagen: require("./img/prodimg/margaritas.jpeg"),
     precio: 12.99,
+    cantidad: 1,
   },
   {
     id: 3,
     nombre: "Semillas de Alegría del hogar",
-    pagina: "Semillas-de-alegría-del-hogar",
+    pagina: "semillas-de-alegría-del-hogar",
     imagen: require("./img/prodimg/alegriadelhogar.jpg"),
     precio: 12.99,
+    cantidad: 1,
   },
   {
-    id: 3,
+    id: 4,
     nombre: "Semillas de Gladiolo",
-    pagina: "Semillas-de-gladiolo",
+    pagina: "semillas-de-gladiolo",
     imagen: require("./img/prodimg/gladiolo.jpg"),
     precio: 12.99,
+    cantidad: 1,
   },
   
 ];
 
 function Products() {
+  const [cartItems, setCartItems] = useState([]);
+  const [cartVisible, setCartVisible] = useState(false);
+
+  const addToCart = (producto) => {
+    const existingItem = cartItems.find(item => item.id === producto.id);
+
+    if (existingItem) {
+      const updatedCart = cartItems.map(item =>
+        item.id === producto.id ? { ...item, cantidad: item.cantidad + 1 } : item
+      );
+      setCartItems(updatedCart);
+    } else {
+      setCartItems([...cartItems, { ...producto, cantidad: 1 }]);
+    }
+  };
+
+  const toggleCart = () => {
+    setCartVisible(!cartVisible);
+  };
+
   return (
     <div id="catalogo" className='principalproducts'>
       <h1 className='productstitle'>Conecta con la naturaleza</h1>
@@ -49,10 +74,14 @@ function Products() {
               <p>{producto.nombre}</p>
             </a>
             <p>Precio: ${producto.precio.toFixed(2)}</p>
-            <button>Agregar al carrito</button>
+            <button onClick={() => addToCart(producto)}>Agregar al carrito</button>
           </div>
         ))}
       </div>
+      {!cartVisible && <button className='abrircarrito' onClick={toggleCart}>Abrir Carrito</button>}
+      {cartVisible && (
+        <Carrito cartItems={cartItems} cerrarCarrito={toggleCart} />
+      )}
     </div>
   );
 }

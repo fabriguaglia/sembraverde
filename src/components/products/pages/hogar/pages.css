@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.productstitlereg {
+  margin-top: 50px;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.buttonreg {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+  }
+
+.principalproductsreg {
+  display: flex;
+  text-align: center;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.productstitlereg {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.catalogoreg {
+  display: grid;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cardreg {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card-imagereg {
+  width: 1200px;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.card-contentreg {
+  padding: 10px;
+}
+
+.card-titlereg {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card-textreg {
+  font-size: 0.9rem;
+  color: grey;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+}
+
+.price {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+}

@@ -33,7 +33,7 @@ const Register = () => {
         <label>Contraseña</label>
       </div>
       <div className='termycond'>
-      <label>
+      <label className='termycond'>
           Acepto los <a className='acepterm' href="terminosycondiciones">Términos y Condiciones</a>
           <input type="checkbox" className='check'/>
         </label>

@@ -77,16 +77,22 @@
         color: white;
       }
       .termycond {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 80%;
+        flex-wrap: wrap;
       }
       .acepterm {
         color: aquamarine;
+        margin-left: 5px;
       }
+
       .check {
-        margin-left: 10px;
-      }
+        margin-left: 5px;
+    }
   
 .button {
     background-color: transparent;
@@ -100,3 +106,20 @@
     transition: background-color 0.3s, color 0.3s;
     font-family: 'Quicksand', sans-serif;
   }
+
+  @media (max-width: 768px) {
+    .check {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+    .termycond {
+      display: block;
+      text-align: center;
+      margin-left: 0;
+    }
+    .acepterm {
+      margin-left: 0;
+      display: block;
+      margin-top: 5px;
+    }
+}

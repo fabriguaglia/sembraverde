@@ -7,9 +7,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-links">
         <a href='/products'>Productos</a>
-        <a href='/cart'>Carrito</a>
         <a href='/login'>Login</a>
-        <a href='/acerca-de'>Acerca de</a>
+        <a href='/about'>Acerca de</a>
         <a href='/contacto'>Contacto</a>
       </div>
       <div className="footer-bottom">

@@ -8,14 +8,16 @@
 }
 
 .buttonreg {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-  }
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  width: 50%;
+  place-self: center;
+}
 
 .principalproductsreg {
   display: flex;
@@ -40,38 +42,73 @@
 }
 
 .cardreg {
-  font-family: 'Quicksand', sans-serif;
   display: flex;
-  overflow: hidden;
-  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .card-imagereg {
-  width: 1200px;
+  width: 100%;
   height: auto;
-  min-width: 100%;
-  min-height: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .card-contentreg {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .card-titlereg {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-  font-family: "Quicksand", sans-serif;
-}
-
-.card-textreg {
-  font-size: 0.9rem;
-  color: grey;
+  font-size: 1.5rem;
   margin-bottom: 10px;
-  text-align: left;
-  font-family: "Quicksand", sans-serif;
 }
 
 .price {
-    text-align: left;
-    font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
+
+.card-textreg {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.moviltext {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .principalproductsreg {
+    margin: 20px; }
+
+  .image-container {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    
+  .card-imagereg {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
+
+  .buttonreg {
+      width: 100%;
+    }
+  } 

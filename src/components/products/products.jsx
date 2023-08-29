@@ -22,7 +22,7 @@ const productos = [
   {
     id: 3,
     nombre: "Semillas de Alegría del hogar",
-    pagina: "semillas-de-alegría-del-hogar",
+    pagina: "semillas-de-alegria-del-hogar",
     imagen: require("./img/prodimg/alegriadelhogar.jpg"),
     precio: 12.99,
     cantidad: 1,

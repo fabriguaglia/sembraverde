@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.contactbody {
+    font-family: 'Quicksand', sans-serif;
+    ;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+}
+
+.contenido {
+        display: grid;
+        gap: 20px;
+}
+
+.picture {
+    width: 300px;
+    height: auto;
+    place-self: center;
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.icon {
+    width: 35px;
+    height: auto;
+    place-self: center;
+}
+
+.icondis {
+    width: 40px;
+    height: auto;
+}
+.abouttext {
+    justify-content: center;
+    display: inline-grid;
+}
+
+@media (max-width: 768px) {
+    .redes {
+        margin-left: 150px;
+    }
+}

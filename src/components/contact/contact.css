@@ -48,6 +48,6 @@
 
 @media (max-width: 768px) {
     .redes {
-        margin-left: 150px;
+        justify-content: center;
     }
 }

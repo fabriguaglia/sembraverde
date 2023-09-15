@@ -65,7 +65,9 @@ https://sembraverde.netlify.app/
 
 ## Autores ✒️
 
-* **Fabrizio Donato Guaglianone** [fabriguaglia](https://github.com/fabriguaglia)
+* **Fabrizio Donato Guaglianone** 
+
+[fabriguaglia](https://github.com/fabriguaglia)
 
 ## Licencia 📄
 

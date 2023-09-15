@@ -62,7 +62,7 @@ https://sembraverde.netlify.app/
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.txt](LICENSE.txt) para detalles
+Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo [LICENSE.txt](LICENSE.txt) para detalles.
 
 ## Contacto
 

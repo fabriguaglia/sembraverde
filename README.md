@@ -1,7 +1,8 @@
 # Sembraverde
-![Logo](/public/plantaLogo.png)
 
 _E-commerce dedicado a la venta de paquetes de semillas de plantas y arboles._
+
+![Logo](/public/plantaLogo.png)
 
 ## Comenzando 🚀
 

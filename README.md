@@ -12,9 +12,13 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 ### Requisitos 📋
 
 [✔] Construir una landing page con la sección de productos.
+
 [] Construir un sistema de login y register simples pero funcionales.
+
 [✔] Construir una página de about us con la presentación del desarrollador.
+
 [✔] Construir una página de contacto simple pero funcional.
+
 [✔] Construir un carrito simple pero funcional.
 
 ### Instalación 🔧

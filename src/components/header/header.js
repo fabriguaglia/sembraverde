@@ -26,7 +26,8 @@ function Header() {
         )}
       </div>
       <nav className={`nav-links ${menuActive ? 'active' : ''}`}>
-        <a href="/login">Login</a>
+
+        <a href="/perfil">Perfil</a>
         <a href="/about">Acerca de</a>
         <a href="/contacto">Contáctanos</a>
       </nav>

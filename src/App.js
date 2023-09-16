@@ -14,6 +14,7 @@ import Margarita from './components/products/pages/margarita/margarita';
 import Hogar from './components/products/pages/hogar/hogar';
 import Contact from './components/contact/contact';
 import AboutUs from './components/about us/aboutus';
+import Profile from './components/log/user/Profile';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/producto/semillas-de-petuñas" element={<Petuñas />} />
         <Route path="/producto/semillas-de-margarita" element={<Margarita />} />
         <Route path="/producto/semillas-de-alegria-del-hogar" element={<Hogar />} />
+        <Route path="/perfil" element={<Profile />} />
       </Routes>
       <Footer />
     </Router>

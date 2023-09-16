@@ -1,0 +1,22 @@
+.profiledata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.profilebutton {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botonperfil {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}

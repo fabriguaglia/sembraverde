@@ -74,11 +74,11 @@ function Products() {
               <p>{producto.nombre}</p>
             </a>
             <p>Precio: ${producto.precio.toFixed(2)}</p>
-            <button onClick={() => addToCart(producto)}>Agregar al carrito</button>
+            <button className="buttonitem" onClick={() => addToCart(producto)}>Agregar al carrito</button>
           </div>
         ))}
       </div>
-      {!cartVisible && <button className='abrircarrito' onClick={toggleCart}>Abrir Carrito</button>}
+      {!cartVisible && <button className='abrircarrito buttonitem' onClick={toggleCart}>Abrir Carrito</button>}
       {cartVisible && (
         <Carrito cartItems={cartItems} cerrarCarrito={toggleCart} />
       )}

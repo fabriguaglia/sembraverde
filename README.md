@@ -63,11 +63,13 @@ Desplegado con [Netlify](https://www.netlify.com/) :
 
 https://sembraverde.netlify.app/
 
+## Construido con 🛠️
+
+* [auth0](https://auth0.com/) - El servicio de registro utilizado.
+
 ## Autores ✒️
 
 * **Fabrizio Donato Guaglianone** 
-
-[fabriguaglia](https://github.com/fabriguaglia)
 
 ## Licencia 📄
 

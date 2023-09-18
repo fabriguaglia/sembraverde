@@ -1,36 +1,41 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import "./cart.css"
 import { useAuth0 } from '@auth0/auth0-react';
 import {obtenerCarritoDesdeFirebase} from "./products"
 import {guardarCarritoEnFirebase} from "./products"
-import firebase from '../firebase';
-import "firebase/firestore";
 
-function Carrito({ cartItems, cerrarCarrito, setCartItems } = {}) {
+function Carrito({ cartItems, cerrarCarrito }) {
   const { user, isAuthenticated } = useAuth0();
 
   const totalPrice = cartItems.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
 
-  useEffect(() => {
+  const handleQuantityChange = (producto, cantidad) => {
+    const updatedCartItems = cartItems.map((item) => {
+      if (item.id === producto.id) {
+        return { ...item, cantidad: item.cantidad + cantidad };
+      }
+      return item;
+    });
+
     if (isAuthenticated) {
       obtenerCarritoDesdeFirebase(user.id)
         .then((carritoRecuperado) => {
-          const updatedCartItems = cartItems.map((item) => {
-            const matchingLocalItem = carritoRecuperado.find((localItem) => localItem.id === item.id);
+          const updatedCarrito = carritoRecuperado.map((item) => {
+            const matchingLocalItem = updatedCartItems.find((localItem) => localItem.id === item.id);
             if (matchingLocalItem) {
               return { ...item, cantidad: matchingLocalItem.cantidad };
             }
             return item;
           });
 
-          guardarCarritoEnFirebase(user.id, updatedCartItems);
-          setCartItems(updatedCartItems);
+          guardarCarritoEnFirebase(user.id, updatedCarrito);
         })
         .catch((error) => {
           console.error("Error al recuperar o actualizar el carrito desde Firebase:", error);
         });
     }
-  }, [isAuthenticated, user, cartItems, setCartItems]);
+
+  };
     return (
       <div className="carrito-overlay">
         <div className="carrito">
@@ -54,6 +59,6 @@ function Carrito({ cartItems, cerrarCarrito, setCartItems } = {}) {
         </div>
       </div>
     );
-            }
+  }
   
   export default Carrito;

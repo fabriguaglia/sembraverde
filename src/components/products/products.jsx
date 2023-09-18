@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
+import { useEffect } from 'react';
 import "./products.css";
-import Carrito from '../header/cart';
+import Carrito from './cart';
+import firebase from '../firebase';
+import "firebase/firestore";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const productos = [
   {
@@ -38,7 +42,35 @@ const productos = [
   
 ];
 
+export const guardarCarritoEnFirebase = async (usuarioId, carrito) => {
+  try {
+    const db = firebase.firestore();
+    const carritoRef = db.collection("carritos").doc(usuarioId);
+    await carritoRef.set({ carrito });
+    console.log("Carrito guardado en Firebase correctamente.");
+  } catch (error) {
+    console.error("Error al guardar el carrito en Firebase:", error);
+  }
+};
+
+export const obtenerCarritoDesdeFirebase = async (usuarioId) => {
+  try {
+    const db = firebase.firestore();
+    const carritoRef = db.collection("carritos").doc(usuarioId);
+    const carritoDoc = await carritoRef.get();
+    if (carritoDoc.exists) {
+      return carritoDoc.data().carrito;
+    }
+  } catch (error) {
+    console.error("Error al obtener carrito.");
+  }
+};
+
 function Products() {
+  const user = useAuth0();
+  const usuarioId = user;
+  const { isAuthenticated } = useAuth0();
+
   const [cartItems, setCartItems] = useState([]);
   const [cartVisible, setCartVisible] = useState(false);
 
@@ -55,9 +87,21 @@ function Products() {
     }
   };
 
-  const toggleCart = () => {
+  const toggleCart = async () => {
     setCartVisible(!cartVisible);
+    if (!cartVisible && isAuthenticated) {
+      const carritoRecuperado = await obtenerCarritoDesdeFirebase(usuarioId);
+      setCartItems(carritoRecuperado);
+    }
   };
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      obtenerCarritoDesdeFirebase(usuarioId).then((carritoRecuperado) => {
+        setCartItems(carritoRecuperado);
+      });
+    }
+  }, [isAuthenticated, usuarioId]);
 
   return (
     <div id="catalogo" className='principalproducts'>

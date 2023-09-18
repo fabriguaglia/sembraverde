@@ -8,20 +8,20 @@ _E-commerce dedicado a la venta de paquetes de semillas de plantas y arboles._
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Mira **Despliegue** para conocer como desplegar el proyecto.
 
 
 ### Requisitos 📋
 
 [✔] Construir una landing page con la sección de productos.
 
-[ ] Construir un sistema de login y register simples pero funcionales.
+[✔] Construir un sistema de login y register simples pero funcionales.
 
 [✔] Construir una página de about us con la presentación del desarrollador.
 
 [✔] Construir una página de contacto simple pero funcional.
 
-[✔] Construir un carrito simple pero funcional.
+[ ] Construir un carrito simple y funcional que guarde los datos en el perfil.
 
 ### Instalación 🔧
 
@@ -65,6 +65,7 @@ https://sembraverde.netlify.app/
 
 ## Construido con 🛠️
 
+* [Firebase](https://firebase.google.com/) - La base de datos utilizada.
 * [auth0](https://auth0.com/) - El servicio de registro utilizado.
 
 ## Autores ✒️

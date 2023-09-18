@@ -85,7 +85,29 @@ function Products() {
     } else {
       setCartItems([...cartItems, { ...producto, cantidad: 1 }]);
     }
+    if (isAuthenticated && user) {
+      guardarCarritoEnFirebase(user.sub, cartItems);
+    }
   };
+
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      const obtenerCarritoDesdeFirebase = async () => {
+        try {
+          const db = firebase.firestore();
+          const carritoRef = db.collection("carritos").doc(user.sub);
+          const carritoDoc = await carritoRef.get();
+          if (carritoDoc.exists) {
+            setCartItems(carritoDoc.data().carrito);
+          }
+        } catch (error) {
+          console.error("Error al obtener el carrito desde Firebase:", error);
+        }
+      };
+
+      obtenerCarritoDesdeFirebase();
+    }
+  }, [isAuthenticated, user]);
 
   const toggleCart = async () => {
     setCartVisible(!cartVisible);

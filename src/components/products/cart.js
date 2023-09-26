@@ -22,9 +22,6 @@ function Carrito({ cartItems, cerrarCarrito }) {
           <ul className='listacarrito'>
             {cartItems.map((producto) => (
                 <>
-                <div >
-                <img id='imagecart' src={producto.imagen} alt={producto.pagina} />
-              </div>
               <li className="listadeprecio" key={producto.id}>
                 <p className='nombreproducto'>{producto.nombre}</p>
                 <p>Precio: ${producto.precio.toFixed(2)}</p>

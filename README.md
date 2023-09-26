@@ -67,7 +67,7 @@ https://sembraverde.netlify.app/
 
 ## Construido con 🛠️
 
-* [React] (https://es.react.dev/) La biblioteca de JavaScript utilizada.
+* [React](https://es.react.dev/) La biblioteca de JavaScript utilizada.
 
 * [Vite](https://vitejs.dev/) La herramienta de tooling para el frontend utilizada.
 

@@ -4,6 +4,8 @@ _E-commerce dedicado a la venta de paquetes de semillas de plantas y arboles._
 
 ![Logo](/public/plantaLogo.png)
 
+https://sembraverde.netlify.app/
+
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -15,7 +17,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 [✔] Construir una landing page con la sección de productos.
 
-[ ] Construir un sistema de login y register simples pero funcionales.
+[✔] Construir un sistema de login y register simples pero funcionales.
 
 [✔] Construir una página de about us con la presentación del desarrollador.
 
@@ -29,7 +31,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 Clona este repositorio en tu máquina local utilizando Git:
 
-```bash git clone https://github.com/fabriguaglia/sembraverde.git```
+```bash git clone https://github.com/tu-usuario/sembraverde.git```
 
 Sustituye "tu-usuario" por tu nombre de usuario de GitHub.
 
@@ -64,6 +66,12 @@ Desplegado con [Netlify](https://www.netlify.com/) :
 https://sembraverde.netlify.app/
 
 ## Construido con 🛠️
+
+* [React] (https://es.react.dev/) La biblioteca de JavaScript utilizada.
+
+* [Vite](https://vitejs.dev/) La herramienta de tooling para el frontend utilizada.
+
+* [Firebase](https://firebase.google.com/) - La base de datos utilizada.
 
 * [auth0](https://auth0.com/) - El servicio de registro utilizado.
 

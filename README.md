@@ -39,7 +39,7 @@ Sustituye "tu-usuario" por tu nombre de usuario de GitHub.
 
 Ingresa al directorio del proyecto que acabas de clonar:
 
-```bash cd pixelsperfect```
+```bash cd sembraverde```
 
 2- **Instalar las dependencias:**
 

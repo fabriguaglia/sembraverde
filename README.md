@@ -93,8 +93,8 @@ Correo: <fabriguaglia72@gmail.com>
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Da las gracias públicamente 🤓.
+* Se dedicó mucho esfuerzo para construir este proyecto final, un e-commerce ficticio de semillas que nació de la idea de crear algo que ayude al medioambiente. 📢
+* Muchas gracias por llegar hasta acá :D
 
 ---
 ⌨️ con ❤️ por [fabriguaglia](https://github.com/fabriguaglia) 😊

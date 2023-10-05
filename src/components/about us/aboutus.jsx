@@ -25,9 +25,9 @@ function AboutUs() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = {
-      name: nombre,
-      email: email,
-      mensaje: mensaje,
+      Name: nombre,
+      Email: email,
+      Mensaje: mensaje,
     };
 
     const contactRef = ref(database, 'contact');

@@ -52,7 +52,7 @@ function AboutUs() {
         <div>
           <input
             type='email'
-            name='email'
+            name='Email'
             className='emailinput'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -62,7 +62,7 @@ function AboutUs() {
         <div>
           <input
             type='text'
-            name='text'
+            name='Nombre'
             className='userinput'
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
@@ -71,6 +71,7 @@ function AboutUs() {
         <label>Deja tu mensaje</label>
         <div className='mensaje'>
           <textarea
+          name='Mensaje'
             value={mensaje}
             onChange={(e) => setMensaje(e.target.value)}
           ></textarea>

@@ -30,7 +30,7 @@ function AboutUs() {
       Mensaje: mensaje,
     };
 
-    const contactRef = ref(database, 'contact');
+    const contactRef = ref(database, 'contacto');
 
     push(contactRef, data)
       .then(() => {

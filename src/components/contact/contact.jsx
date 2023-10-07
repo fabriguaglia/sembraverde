@@ -9,7 +9,7 @@ import imgImport from './imgimport'
         <div className='contenido'>
             <img src={imgImport.person} alt='me' className='picture'/>
             <div className='abouttext'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolore modi asperiores, possimus suscipit reprehenderit nesciunt similique maxime repellendus consequatur earum. Eum aut necessitatibus eveniet, repellendus praesentium velit blanditiis quae.</p>
+                <p>Hola! Mi nombre es Fabrizio Donato Guaglianone, pertenezco al Stage 2 del curso de desarrollo web de Streambre "Generación T", y en este entregable buscaba crear una página para ayudar al medio ambiente, por esta idea es que nació Sembraverde, una página web de venta de paquetes de semillas de plantas y arboles.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolore modi asperiores, possimus suscipit reprehenderit nesciunt similique maxime repellendus consequatur earum. Eum aut necessitatibus eveniet, repellendus praesentium velit blanditiis quae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolore modi asperiores, possimus suscipit reprehenderit nesciunt similique maxime repellendus consequatur earum. Eum aut necessitatibus eveniet, repellendus praesentium velit blanditiis quae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolore modi asperiores, possimus suscipit reprehenderit nesciunt similique maxime repellendus consequatur earum. Eum aut necessitatibus eveniet, repellendus praesentium velit blanditiis quae.</p>

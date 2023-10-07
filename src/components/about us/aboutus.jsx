@@ -48,36 +48,36 @@ function AboutUs() {
     <div className='aboutbody datos'>
       <h1 className='abouttitle'>Contactanos</h1>
       <form className='contactForm' onSubmit={handleSubmit}>
-        <label>Correo</label>
-        <div>
-          <input
-            type='email'
-            name='Email'
-            className='emailinput'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <label>Usuario</label>
-        <div>
-          <input
-            type='text'
-            name='Nombre'
-            className='userinput'
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-          />
-        </div>
-        <label>Deja tu mensaje</label>
-        <div className='mensaje'>
-          <textarea
-          name='Mensaje'
-            value={mensaje}
-            onChange={(e) => setMensaje(e.target.value)}
-          ></textarea>
-        </div>
-        <input type='submit' value='Enviar' id='enviar' />
-      </form>
+  <label>Correo</label>
+  <div>
+    <input
+      type='email'
+      name='email'
+      className='emailinput'
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+    />
+  </div>
+  <label>Usuario</label>
+  <div>
+    <input
+      type='text'
+      name='nombre'
+      className='userinput'
+      value={nombre}
+      onChange={(e) => setNombre(e.target.value)}
+    />
+  </div>
+  <label>Deja tu mensaje</label>
+  <div className='mensaje'>
+    <textarea
+      name='mensaje'
+      value={mensaje}
+      onChange={(e) => setMensaje(e.target.value)}
+    ></textarea>
+  </div>
+  <input type='submit' value='Enviar' id='enviar' />
+</form>
     </div>
   );
 }

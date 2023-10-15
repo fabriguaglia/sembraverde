@@ -78,6 +78,8 @@ https://sembraverde.netlify.app/
 ## Autores ✒️
 
 * **Fabrizio Donato Guaglianone** 
+* **Agustín Díaz Ortíz** 
+* **Facundo Leon Padilla**
 
 ## Licencia 📄
 

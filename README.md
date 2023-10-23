@@ -87,7 +87,7 @@ Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el a
 
 GitHub: <https://github.com/fabriguaglia>
 
-LinkedIn: <https://www.linkedin.com/in/>
+LinkedIn: <https://www.linkedin.com/in/fabrizio-donato-guaglianone>
 
 Correo: <fabriguaglia72@gmail.com>
 
